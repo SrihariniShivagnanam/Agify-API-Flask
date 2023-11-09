@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Anticipated Age Analysis</title>
+    <style>
+        body {
+            background: radial-gradient(circle, #FAF0E6, #ADD8E6);
+            text-align: center;
+            font-family: 'Lucida Handwriting', cursive;
+            color: black;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        .content-box {
+    background: rgba(225, 225, 225, 0.8); /* Semi-transparent white background */
+    border: 2px solid #ADD8E6;
+    padding: 20px;
+    border-radius: 10px;
+    width: 600px;
+    height: 200px;
+}
+
+}
+
+        }
+
+        h1 {
+            font-size: 32px;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+        }
+
+        p {
+            font-size: 18px;
+            text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+        }
+
+        a {
+            color: MidnightBlue;
+            text-decoration: underline;
+        }
+
+        @keyframes fadeInUp {
+            0% {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            100% {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="content-box">
+        <h1>Age Prediction</h1>
+        <p>Hey ! {{ name }}</p>
+        <p>Predicted age: {{ age }}</p>
+        <a href="/">Go back to the prediction page</a>
+    </div>
+</body>
+</html>
